@@ -1,6 +1,10 @@
 import { useState } from 'react';
+import Header from './components/header';
+import ListItem from './components/ListItem';
 import './css/App.css'
+import Form from './components/Form';
 
+// Array iniziale
 const starterList = ["Transumanesimo 2026", "Roadmap to Mars", "Robot and Humans boundaries"];
 
 export default function App() {
@@ -19,45 +23,21 @@ export default function App() {
 
   return (
     <div className='container py-3'>
-      <div>
-      <h1>Latest articles</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit itaque consequatur perspiciatis sapiente asperiores culpa hic. Pariatur, nemo. Ipsum magnam alias at sunt sed blanditiis esse accusantium rerum in?</p>
-      </div>    
-      <div className='article-container'>
-        <ul>
-          {articleList.map((item, index) => (
-            <li key={index} 
-                className='d-flex justify-content-between my-2'
-                >
-                  <span>{item}</span>
-                  <button 
-                      onClick={() => {
-                        let deleteIndex  =index; 
-                        const updatedArticleList = articleList.filter((item, thisIndex) => thisIndex!== deleteIndex);
-                        setArticleList(updatedArticleList); 
-                      }}
-                     className='btn btn-danger'>
-                    <i className="bi bi-trash-fill"></i>
-                  </button></li>))}
-        </ul>
-        <hr />
-        <form 
-          onSubmit={handleForm} className="input-group mb-3">
-          <input 
-          value={newArticle}
-          onChange={handleNewArticle}
-          type="text" 
-          className="form-control" 
-          placeholder="Titolo nuovo articolo" 
-          aria-label="New article" 
-          aria-describedby="button-new-articles" />
-          <button 
-          className="btn btn-success" 
-          id="button-new-article">
-            Aggiungi
-            </button>
-        </form>
-      </div>
+      <Header />
+      <main>
+        <div className='article-container'>
+          <ul className='list-group'>
+            {articleList.map((item, index) => 
+              (<ListItem key={index} 
+                item={item} 
+                deleteFunction={() => setArticleList(articleList.filter((_, i) => i !== index)) }/>))}
+          </ul>
+          <hr />
+          <Form handleForm ={handleForm} 
+                newArticle={newArticle} 
+                handleNewArticle={handleNewArticle}/>
+        </div>
+      </main>
     </div>
   )
 }
