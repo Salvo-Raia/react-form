@@ -1,9 +1,18 @@
 import { useState } from 'react';
 import './css/App.css'
 
+const starterList = ["Transumanesimo 2026", "Roadmap to Mars", "Robot and Humans boundaries"]
+
 export default function App() {
-  const articleList = ["Transumanesimo 2026", "Roadmap to Mars", "Robot and Humans boundaries"]; 
+  const [articleList, setArticleList] = useState(starterList); 
   const [newArticle, setNewArticle] = useState("");
+
+  const handleForm = (e) => {
+          e.preventDefault(); 
+          console.log("nuovo articolo aggiunto:", newArticle);
+        }
+
+  const handleNewArticle = (e) => setNewArticle(e.target.value)
 
   return (
     <div className='container py-3'>
@@ -17,13 +26,10 @@ export default function App() {
         </ul>
         <hr />
         <form 
-          onSubmit={(e) => {
-          e.preventDefault(); 
-          console.log("nuovo articolo aggiunto:", newArticle);
-        }} className="input-group mb-3">
+          onSubmit={handleForm} className="input-group mb-3">
           <input 
           value={newArticle}
-          onChange={e => setNewArticle(e.target.value)}
+          onChange={handleNewArticle}
           type="text" 
           className="form-control" 
           placeholder="Titolo nuovo articolo" 
