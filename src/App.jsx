@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import './css/App.css'
 
 export default function App() {
   const articleList = ["Transumanesimo 2026", "Roadmap to Mars", "Robot and Humans boundaries"]; 
+  const [newArticle, setNewArticle] = useState("");
 
   return (
     <div className='container py-3'>
@@ -11,15 +13,28 @@ export default function App() {
       </div>    
       <div className='list-group'>
         <ul>
-          {articleList.map((todo) => <li>{todo}</li>)}
+          {articleList.map((todo, index) => <li key={index}>{todo}</li>)}
         </ul>
         <hr />
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-            <div class="input-group-append">
-           <button class="btn btn-outline-secondary" type="button">Button</button>
-        </div>
-      </div>
+        <form 
+          onSubmit={(e) => {
+          e.preventDefault(); 
+          console.log("nuovo articolo aggiunto:", newArticle);
+        }} className="input-group mb-3">
+          <input 
+          value={newArticle}
+          onChange={e => setNewArticle(e.target.value)}
+          type="text" 
+          className="form-control" 
+          placeholder="Titolo nuovo articolo" 
+          aria-label="New article" 
+          aria-describedby="button-new-articles" />
+          <button 
+          className="btn btn-success" 
+          id="button-new-article">
+            Aggiungi
+            </button>
+        </form>
       </div>
     </div>
   )
