@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './css/App.css'
 
-const starterList = ["Transumanesimo 2026", "Roadmap to Mars", "Robot and Humans boundaries"]
+const starterList = ["Transumanesimo 2026", "Roadmap to Mars", "Robot and Humans boundaries"];
 
 export default function App() {
   const [articleList, setArticleList] = useState(starterList); 
@@ -9,8 +9,8 @@ export default function App() {
 
   const handleForm = (e) => {
           e.preventDefault(); 
-          console.log("nuovo articolo aggiunto:", newArticle);
-        }
+          setArticleList([...articleList, newArticle])
+        };
 
   const handleNewArticle = (e) => setNewArticle(e.target.value)
 
@@ -22,7 +22,7 @@ export default function App() {
       </div>    
       <div className='list-group'>
         <ul>
-          {articleList.map((todo, index) => <li key={index}>{todo}</li>)}
+          {articleList.map((item, index) => <li key={index}>{item}</li>)}
         </ul>
         <hr />
         <form 
