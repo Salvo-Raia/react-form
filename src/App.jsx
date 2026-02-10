@@ -23,9 +23,9 @@ export default function App() {
       <h1>Latest articles</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit itaque consequatur perspiciatis sapiente asperiores culpa hic. Pariatur, nemo. Ipsum magnam alias at sunt sed blanditiis esse accusantium rerum in?</p>
       </div>    
-      <div className='list-group'>
+      <div className='article-container'>
         <ul>
-          {articleList.map((item, index) => <li key={index}>{item}</li>)}
+          {articleList.map((item, index) => <li key={index} className='d-flex justify-content-between my-2'><span>{item}</span><button className='btn btn-danger'><i class="bi bi-trash-fill"></i></button></li>)}
         </ul>
         <hr />
         <form 
