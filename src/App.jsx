@@ -25,7 +25,20 @@ export default function App() {
       </div>    
       <div className='article-container'>
         <ul>
-          {articleList.map((item, index) => <li key={index} className='d-flex justify-content-between my-2'><span>{item}</span><button className='btn btn-danger'><i class="bi bi-trash-fill"></i></button></li>)}
+          {articleList.map((item, index) => (
+            <li key={index} 
+                className='d-flex justify-content-between my-2'
+                >
+                  <span>{item}</span>
+                  <button 
+                      onClick={() => {
+                        let deleteIndex  =index; 
+                        const updatedArticleList = articleList.filter((item, thisIndex) => thisIndex!== deleteIndex);
+                        setArticleList(updatedArticleList); 
+                      }}
+                     className='btn btn-danger'>
+                    <i className="bi bi-trash-fill"></i>
+                  </button></li>))}
         </ul>
         <hr />
         <form 
