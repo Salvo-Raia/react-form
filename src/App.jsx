@@ -9,7 +9,10 @@ export default function App() {
 
   const handleForm = (e) => {
           e.preventDefault(); 
-          setArticleList([...articleList, newArticle])
+          if(newArticle !=="") {
+            setArticleList([...articleList, newArticle])
+            setNewArticle("");
+          } 
         };
 
   const handleNewArticle = (e) => setNewArticle(e.target.value)
