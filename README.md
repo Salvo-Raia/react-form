@@ -1,6 +1,8 @@
-![Boolean Tech Academy](https://img.shields.io/badge/Boolean_Tech_Academy-001632?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/Boolean_Tech_Academy-1565C0?style=for-the-badge)
 
-# 🎓 Exercise 35/50 - React Blog Form
+# 🎓 Exercise 35/50: React Blog Form
+
+Building a React blog interface with a form to add articles, dynamically manage the article list, and implement editing and deletion features using state and reusable components.
 
 ## 📌 Project Overview
 
@@ -15,33 +17,33 @@
 
 Build a simple blog interface using React, allowing users to view and add articles through a form.
 
-### Milestone 1 - Display Articles
+#### Milestone 1 - Display Articles
 
 Create a page that displays a list of blog articles, showing **only their titles**.
 
-### Milestone 2 - Add New Articles
+#### Milestone 2 - Add New Articles
 
 Add a simple form to the page with an input field where users can enter the title of a new blog article.
 
 When the form is submitted, update the article list to display the newly added article alongside the existing ones.
 
-## ⭐ Bonus
+### ⭐ Bonus
 
-### 1. Delete Articles
+#### 1. Delete Articles
 
 Add the possibility to delete individual articles using an icon.
 
-### 2. Edit Article Titles
+#### 2. Edit Article Titles
 
 Implement a feature that allows users to modify the title of an existing article.
 
-### 3. Component Organization
+#### 3. Component Organization
 
 Structure the application using multiple React components, separating responsibilities where appropriate.
 
 ## 🛠️ Technologies
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
+![JSX](https://img.shields.io/badge/JSX-6A1B9A?style=flat-square&logo=react&logoColor=F7DF1E&labelColor=6A1B9A&color=6A1B9A) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
 ## 💡 What I Learned
 
@@ -56,4 +58,4 @@ Structure the application using multiple React components, separating responsibi
 
 ## ©️ Credits
 
-Exercise assigned by **Boolean Tech Academy** as part of the Web Development course - Class 152 - Year 2025-2026
+Exercise assigned by **Boolean Tech Academy** as part of the Web Development course (Class 152, A.Y. 2025–2026).
