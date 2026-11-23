@@ -8,23 +8,25 @@ Building a React blog interface with a form to add articles, dynamically manage 
 
 | Repository | Project | Category | Main Focus | Exercise |
 |:--|:--|:--|:--|:--|
-| react-form | React Blog Form | Exercise | React State & Forms | 35/50 |
+| react-form | React Blog Form | Exercise | React State & Form | 35/50 |
 
 ## Assignment
 
 Build a simple blog interface using React, allowing users to view and add articles through a form.
 
-#### Milestone 1: Display Articles
+#### Milestone 1: Display articles
 
 Create a page that displays a list of blog articles, showing **only their titles**.
 
-#### Milestone 2: Add New Articles
+#### Milestone 2: Add new articles
 
 Add a simple form to the page with an input field where users can enter the title of a new blog article.
 
 When the form is submitted, update the article list to display the newly added article alongside the existing ones.
 
 #### Bonus challenge
+
+Try to implement the following additional features.
 
 - Add the possibility to delete individual articles using an icon.
 
@@ -34,7 +36,11 @@ When the form is submitted, update the article list to display the newly added a
 
 ## Technologies
 
-![JSX](https://img.shields.io/badge/JSX-6A1B9A?style=flat-square&logo=react&logoColor=F7DF1E&labelColor=6A1B9A&color=6A1B9A) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![JSX](https://img.shields.io/badge/JSX-6A1B9A?style=flat-square&logo=react&logoColor=F7DF1E&labelColor=6A1B9A&color=6A1B9A) 
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white) 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) 
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) 
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
 ## What I learned
 
