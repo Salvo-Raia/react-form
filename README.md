@@ -8,7 +8,7 @@ Building a React blog interface with a form to add articles, dynamically manage 
 
 | Repository | Project | Category | Main Focus | Exercise |
 |:--|:--|:--|:--|:--|
-| react-form | React Blog Form | Exercise | React & Form | 35/50 |
+| react-form | React Blog Form | Exercise | React, Form | 35/50 |
 
 ## Assignment
 
@@ -20,7 +20,7 @@ Create a page that displays a list of blog articles, showing **only their titles
 
 #### Milestone 2: Add new articles
 
-Add a simple form to the page with an input field where users can enter the title of a new blog article.
+Add a simple form with an input field that allows users to enter the title of a new blog article.
 
 When the form is submitted, update the article list to display the newly added article alongside the existing ones.
 
