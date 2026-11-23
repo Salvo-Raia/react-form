@@ -8,7 +8,7 @@ Building a React blog interface with a form to add articles, dynamically manage 
 
 | Repository | Project | Category | Main Focus | Exercise |
 |:--|:--|:--|:--|:--|
-| react-form | React Blog Form | Exercise | React, Form | 35/50 |
+| react-form | React Blog Form | Exercise | React, form | 35/50 |
 
 ## Assignment
 
