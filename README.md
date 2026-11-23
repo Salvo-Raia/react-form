@@ -8,7 +8,7 @@ Building a React blog interface with a form to add articles, dynamically manage 
 
 | Repository | Project | Category | Main Focus | Exercise |
 |:--|:--|:--|:--|:--|
-| react-form | React Blog Form | Exercise | React State & Form | 35/50 |
+| react-form | React Blog Form | Exercise | React & Form | 35/50 |
 
 ## Assignment
 
@@ -29,9 +29,7 @@ When the form is submitted, update the article list to display the newly added a
 Try to implement the following additional features.
 
 - Add the possibility to delete individual articles using an icon.
-
 - Implement a feature that allows users to modify the title of an existing article.
-
 - Structure the application using multiple React components, separating responsibilities where appropriate.
 
 ## Technologies
